@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Clockworkgeek_CalendarView</name>
+    <version>1.4.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Replace date picker with CalendarView</summary>
+    <description>Replaces the default (and ugly) (and buggy) javascript date picker with a newer, lightweight one from http://calendarview.org/&#xD;
+</description>
+    <notes>Switched to version 1.4 of CalendarView as forked here https://github.com/clockworkgeek/calendarview.  Version numbers of this extension should now mirror the JS widget.&#xD;
+&#xD;
+Localisation now follows the admin setting in System &gt; Configuration &gt; General &gt; Locale Options.  There is no need to edit the skin files any more.  To add more locales see the file /js/calendarview/i18n.js&#xD;
+</notes>
+    <authors><author><name>Clockworkgeek</name><user>nonproffessional</user><email>nonproffessional@clockworkgeek.com</email></author></authors>
+    <date>2014-07-13</date>
+    <time>20:07:13</time>
+    <contents><target name="magecommunity"><dir name="Clockworkgeek"><dir name="CalendarView"><dir name="Block"><dir name="Html"><file name="Date.php" hash="88033157b18467dea1ff7eaaef819314"/></dir></dir><dir name="Helper"><file name="Data.php" hash="796e1c34398f91401f459d5751461665"/></dir><dir name="etc"><file name="config.xml" hash="d903a3a245a791e72821f9a402b6e273"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Clockworkgeek_CalendarView.xml" hash="e15dbdb8dff966babc0afffb340e76d7"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="calendarview.xml" hash="63802012b673918deae096bc4a8c8f26"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="calendarview"><file name="calendarview.css" hash="72e1b36973450f6a7d35902d9103d93c"/><file name="calendarview_ie.css" hash="048fa59cd71dfa6206c718b09702f26d"/></dir></dir></dir></dir></dir></target><target name="mageweb"><dir name="js"><dir name="calendarview"><file name="I18n.js" hash="9973ea4834fa32e28e3185b77767c6f4"/><file name="calendarview.js" hash="1e1e00fa9d8c3706e9fedc53247a9345"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

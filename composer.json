@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Clockworkgeek_CalendarView",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Replace date picker with CalendarView",
+    "authors": [
+    {
+        "name": "Clockworkgeek",
+        "email": "nonproffessional@clockworkgeek.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
