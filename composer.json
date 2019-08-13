@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "",
     "homepage": "",
-    "description": "",
+    "description": "Replace the default date picker with a modern, lightweight alternative.",
     "authors": [
     {
-        "name": "",
-        "email": ""
+        "name": "Daniel Deady",
+        "email": "daniel@clockworkgeek.com"
     }
 ],
     "suggest": {

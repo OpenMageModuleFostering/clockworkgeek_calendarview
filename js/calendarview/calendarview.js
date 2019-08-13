@@ -109,6 +109,14 @@ var Calendar = Class.create({
       popupTriggerElement.observe('click', function(event){
         this.showAtElement(event, popupTriggerElement);
       }.bind(this) );
+      if (popupTriggerElement.tagName == 'INPUT') {
+          popupTriggerElement.observe('focus', function(event){
+            this.showAtElement(event, popupTriggerElement);
+          }.bind(this) );
+          popupTriggerElement.observe('blur', function(event){
+            this.hide();
+          }.bind(this) );
+      }
 
     } else{ // In-Page Calendar
       this.show();
@@ -334,6 +342,7 @@ var Calendar = Class.create({
             cell.className = '';
             cell.date = new Date(date);
             cell.update(day);
+            delete cell.navAction;
 
             // Account for days of the month other than the current month
             if (!isCurrentMonth)
@@ -456,8 +465,8 @@ var Calendar = Class.create({
       y = containerWidth * this.y + pos.y;
     }else{ // 'container' - container of the trigger elements
       var pos = Position.cumulativeOffset(element);
-      x = pos[0];
-      y = this.container.offsetHeight * 0.75 + pos[1];
+      x = pos.left;
+      y = element.offsetHeight + pos.top + 2;
     }
     this.showAt(x, y);
   },
