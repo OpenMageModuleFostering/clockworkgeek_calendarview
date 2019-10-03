@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Clockworkgeek_CalendarView",
+    "name": "OpenMageModuleFostering\/Clockworkgeek_CalendarView",
     "type": "magento-module",
     "license": "",
     "homepage": "",
     "description": "Replace the default date picker with a modern, lightweight alternative.",
     "authors": [
-    {
-        "name": "Daniel Deady",
-        "email": "daniel@clockworkgeek.com"
-    }
-],
+        {
+            "name": "Daniel Deady",
+            "email": "daniel@clockworkgeek.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
